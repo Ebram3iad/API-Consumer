@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Day_2_API_Consumer_Lab.Models.Category>
+@{
+    ViewBag.Title = "GetAll";
+}
+
+<h2>GetAll</h2>
+
+<br />
+<table class="table-hover active">
+    <tr>
+        <th class="col-lg-1">ID</th>
+        <th class="col-lg-1">Name</th>
+    </tr>
+    @{
+        foreach (var item in ViewBag.Result)
+        {
+            <tr>
+                <td class="col-lg-1">@item.Id</td>
+                <td class="col-lg-1">@item.Name</td>
+            </tr>
+        }
+
+
+    }
+
+</table>
